@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    flex-direction: column;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #171717;
+}
+
+#navegacao{
+    background: none !important;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container-fluid {
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+}
+
+select, input{
+    box-shadow: none !important;
+    height: 2.875rem !important;
+    font-size: 16px !important;
+    background: transparent !important;
+    color: #fff !important;
+    border: 2px solid #F30000 !important;
+    border-radius: 30px !important;
+    padding-left: 20px !important;
+}
+
+#botao{
+    background-color: #F30000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+}
+
+.lupa{
+    color: #fff;
+}
+
+#botao:hover{
+    transition: 0.2s;
+    background-color: #FD5757;
+}
+
+.buscar{
+    width: 1500vw;
+}
+
+.valor{
+    width: 100%;
+}
+
+.ano{
+    width: 60%;
+}
