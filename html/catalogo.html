@@ -1,44 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/catalogo.css">
-    <title>Catálogo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../css/catalogo.css">
+  <title>Catálogo</title>
 </head>
+
 <body>
-    <header>
-        <div class="logo">
-            <img src="../img/logo.webp" alt="ACME filmes">
-        </div>
-        <nav class="navbar bg-body-tertiary container-fluid" id="navegacao">
-            <div class="container-fluid">
-              <form class="d-flex" role="search">
-                <input class="form-control me-3 buscar" type="search" placeholder="Search" aria-label="Search">
-                <input class="form-control me-3 valor" type="search" placeholder="Search" aria-label="Search">
-                <select class="form-select me-3 ano" aria-label="Default select example">
-                    <option selected>Ano</option>
-                    <option value="1">2024</option>
-                    <option value="2">2023</option>
-                    <option value="3">2022</option>
-                  </select>
-                <button class="btn btn-outline-success" id="botao" type="submit">
-                    <i class="fa-solid fa-magnifying-glass lupa"></i>
-                </button>
-              </form>
-            </div>
-          </nav>
-    </header>
-    <main>
-      <div class="card-container">
-        <div class="card" style="background-color: #F30000; width: 11.25rem;  height: 16.6rem; border-radius: 16px;">
-          <img src="../img/avengers-infinity-war-poster.jpeg" class="card-img-top" alt="..." style="width: 100%;  height: 100%; border-radius: 16px;">
+  <header>
+    <div class="logo">
+      <img src="../img/logo.webp" alt="ACME filmes">
+    </div>
+    <nav class="navbar bg-body-tertiary container-fluid" id="navegacao">
+      <div class="container-fluid">
+        <form class="d-flex" role="search">
+          <input class="form-control me-3 buscar" type="search" placeholder="Search" aria-label="Search">
+          <input class="form-control me-3 valor" type="search" placeholder="Search" aria-label="Search">
+          <select class="form-select me-3 ano" aria-label="Default select example">
+            <option selected>Ano</option>
+            <option value="1">2024</option>
+            <option value="2">2023</option>
+            <option value="3">2022</option>
+          </select>
+          <button class="btn btn-outline-success" id="botao" type="submit">
+            <i class="fa-solid fa-magnifying-glass lupa"></i>
+          </button>
+        </form>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="../img/avengers-infinity-war-poster.jpeg" class="card-img-top" alt="Poster do filme"
+              style="width: 100%; height: 100%; border-radius: 16px;">
+          </div>
+          <div class="card-back">
+            <h5> Vingadores </h5>
+            <button class="mais"><p>
+              +
+            </p></button>
+            <h5>R$29.29</h5>
+          </div>
         </div>
       </div>
+    </div>
+  </main>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const card = document.querySelector(".card");
 
-    </main>
+      card.addEventListener("click", function () {
+        const cardInner = this.querySelector(".card-inner");
+        cardInner.style.transform = cardInner.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)';
+      });
+    });
+  </script>
 </body>
+
 </html>
