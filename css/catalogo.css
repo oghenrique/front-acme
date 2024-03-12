@@ -73,3 +73,20 @@ select, input{
 .ano{
     width: 60%;
 }
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    margin: 3rem 5rem;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.card:hover{
+    scale: 1.1;
+    transition: 0.8s;
+}
