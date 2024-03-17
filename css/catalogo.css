@@ -88,7 +88,7 @@ select, input{
     height: 16.6rem;
     border-radius: 16px;
     cursor: pointer;
-    transition: transform 1s; 
+    transition: 0.5s; 
     background-color: #F30000;
 }
 
@@ -124,6 +124,14 @@ select, input{
     padding: 1rem;
 }
 
+.card-back h5{
+    font-weight: 700;
+}
+
+.valor-card{
+    color: #06631B;
+}
+
 .mais{
     background-color: #F30000;
     border-radius: 50%;
@@ -137,6 +145,24 @@ select, input{
 
 .mais p{
     margin-top: -0.6rem;
+}
+
+.modal-body{
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+.sinopse-text{
+    text-align: justify;
+}
+
+.card-title{
+    color: #F30000;
+}
+
+.modal-body{
+    background-color: #171717;
 }
 
 

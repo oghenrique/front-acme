@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="../css/catalogo.css">
+  <script src="../js/catalogo.js" defer></script>
   <title>Catálogo</title>
 </head>
 
@@ -43,26 +44,49 @@
               style="width: 100%; height: 100%; border-radius: 16px;">
           </div>
           <div class="card-back">
-            <h5> Vingadores </h5>
-            <button class="mais"><p>
-              +
-            </p></button>
-            <h5>R$29.29</h5>
+            <h5 class="titulo-card"> Vingadores </h5>
+            <button class="mais" data-bs-toggle="modal" data-bs-target="#modalExemplo">
+              <p>+</p>
+            </button>
+            <h5 class="valor-card">R$29.29</h5>
           </div>
         </div>
       </div>
     </div>
   </main>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const card = document.querySelector(".card");
 
-      card.addEventListener("click", function () {
-        const cardInner = this.querySelector(".card-inner");
-        cardInner.style.transform = cardInner.style.transform === 'rotateY(180deg)' ? 'rotateY(0deg)' : 'rotateY(180deg)';
-      });
-    });
-  </script>
+  <div class="modal fade" id="modalExemplo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="card-modal mb-4" style="max-width: 90%;">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <img src="../img/avengers-infinity-war-poster.jpeg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body text-white">
+                  <h4 class="card-title text-center fw-bolder">Vingadores</h4>
+                  <h4 class="card-sinopse fw-bolder">Sinopse:</h4>
+                  <p class="sinopse-text ">Loki, o irmão de Thor, ganha acesso ao poder ilimitado do cubo cósmico ao
+                    roubá-lo de dentro das instalações da S.H.I.E.L.D. Nick Fury, o diretor desta agência internacional
+                    que mantém a paz, logo reúne os únicos super-heróis que serão capazes de defender a Terra de ameaças
+                    sem precedentes. Homem de Ferro, Capitão América, Hulk, Thor, Viúva Negra e Gavião Arqueiro formam o
+                    time dos sonhos de Fury, mas eles precisam aprender a colocar os egos de lado e agir como um grupo
+                    em prol da humanidade.</p>
+                  <h4 class="card-lancamento fw-bolder">Data de lançamento:</h4>
+                  <p class="lancamento-text">27 de abril de 2012</p>
+                  <h4 class="card-duracao fw-bolder">Tempo de duração:</h4>
+                  <p class="duracao-text ">2 horas e 33 minutos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
