@@ -45,6 +45,10 @@ select, input{
     padding-left: 20px !important;
 }
 
+option{
+    background-color: #171717;
+}
+
 #botao{
     background-color: #F30000;
     border: none;
@@ -164,5 +168,3 @@ select, input{
 .modal-body{
     background-color: #171717;
 }
-
-
