@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="../css/catalogo.css">
   <script src="../js/catalogo.js" defer></script>
+  <script src="../js/main.js" defer></script>
   <title>Catálogo</title>
 </head>
 
@@ -20,7 +21,8 @@
     <nav class="navbar bg-body-tertiary container-fluid" id="navegacao">
       <div class="container-fluid">
         <form class="d-flex" role="search">
-          <input class="form-control me-3 buscar" type="search" placeholder="Pesquise o título do filme..." aria-label="Search">
+          <input class="form-control me-3 buscar" type="search" placeholder="Pesquise o título do filme..."
+            aria-label="Search" onkeyup="searchMovies(this.value)">
           <input class="form-control me-3 valor" type="search" placeholder="Preço" aria-label="Preço">
           <select class="form-select me-3 ano" aria-label="Default select example">
             <option selected>Ano</option>
@@ -59,9 +61,15 @@
     <div class="modal-dialog modal-xl modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body">
+          <div class="botao-sair">
+            <div class="exit">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                style="color: white;"></button>
+            </div>
+          </div>
           <div class="card-modal mb-4" style="max-width: 90%;">
             <div class="row g-4">
-              <div class="col-md-4">
+              <div class="col-md-4 poster">
                 <img src="../img/avengers-infinity-war-poster.jpeg" class="img-fluid rounded-start" alt="...">
               </div>
               <div class="col-md-6">
