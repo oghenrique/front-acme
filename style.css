@@ -1,22 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "poppins", sans-serif;
 }
 
-body{
-    background-color: #171717;
+header {
+    width: 90vw;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(42, 42, 42, 1) 35%, rgba(6, 6, 6, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 100vh;
+    height: 80vh;
 }
 
-.container{
+h1{
+    color: white;
+}
+
+.container {
     background-color: #171717;
     border-radius: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
@@ -28,31 +35,43 @@ body{
     border-color: #F30000;
 }
 
-.container p{
+.container p {
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0.3px;
     margin: 20px 0;
 }
 
-.container span{
+.container span {
     font-size: 12px;
 }
 
-.container a{
+.esqueci-senha{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 12px;
+    color: #fff;
+    margin: 15px 0 10px;
+}
+
+.social-icons {
     color: #333;
     font-size: 13px;
     text-decoration: none;
     margin: 15px 0 10px;
 }
 
-.container button{
+
+
+.container .button, .hidden {
     background-color: #F30000;
-    color: #fff;
-    font-size: 12px;
+    color: #F30000;
+    font-size: 16px;
     padding: 10px 45px;
     border: 1px solid transparent;
-    border-radius: 8px;
+    border-radius: 32px;
     font-weight: 600;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -60,12 +79,20 @@ body{
     cursor: pointer;
 }
 
-.container button.hidden{
-    background-color: transparent;
+.form-container .button{
+    color: #fff;
+}
+
+.container .button:hover{
+    opacity: 0.95;
+}
+
+.container .hidden {
+    background-color: #fff;
     border-color: #fff;
 }
 
-.container form{
+.container form {
     background-color: #171717;
     display: flex;
     align-items: center;
@@ -75,75 +102,66 @@ body{
     height: 100%;
 }
 
-.container input{
-    background-color: #eee;
-    border: none;
+.container input {
+    background-color: transparent;
+    border: solid 2px #F30000;
     margin: 8px 0;
     padding: 10px 15px;
     font-size: 13px;
-    border-radius: 8px;
+    border-radius: 32px;
     width: 100%;
     outline: none;
+    color: #fff;
 }
 
-.form-container{
+.form-container {
     position: absolute;
     top: 0;
     height: 100%;
     transition: all 0.6s ease-in-out;
 }
 
-.sign-in{
+.sign-in {
     left: 0;
     width: 50%;
     z-index: 2;
 }
 
-.container.active .sign-in{
+.container.active .sign-in {
     transform: translateX(100%);
 }
 
-.sign-up{
+.sign-up {
     left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
 }
 
-.container.active .sign-up{
+.container.active .sign-up {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
     animation: move 0.6s;
 }
 
-@keyframes move{
-    0%, 49.99%{
+@keyframes move {
+
+    0%,
+    49.99% {
         opacity: 0;
         z-index: 1;
     }
-    50%, 100%{
+
+    50%,
+    100% {
         opacity: 1;
         z-index: 5;
     }
 }
 
-.social-icons{
-    margin: 20px 0;
-}
 
-.social-icons a{
-    border: 1px solid #ccc;
-    border-radius: 20%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 3px;
-    width: 40px;
-    height: 40px;
-}
-
-.toggle-container{
+.toggle-container {
     position: absolute;
     top: 0;
     left: 50%;
@@ -155,12 +173,12 @@ body{
     z-index: 1000;
 }
 
-.container.active .toggle-container{
+.container.active .toggle-container {
     transform: translateX(-100%);
     border-radius: 0 150px 100px 0;
 }
 
-.toggle{
+.toggle {
     background-color: #F30000;
     height: 100%;
     color: #fff;
@@ -172,11 +190,11 @@ body{
     transition: all 0.6s ease-in-out;
 }
 
-.container.active .toggle{
+.container.active .toggle {
     transform: translateX(50%);
 }
 
-.toggle-panel{
+.toggle-panel {
     position: absolute;
     width: 50%;
     height: 100%;
@@ -191,19 +209,19 @@ body{
     transition: all 0.6s ease-in-out;
 }
 
-.toggle-left{
+.toggle-left {
     transform: translateX(-200%);
 }
 
-.container.active .toggle-left{
+.container.active .toggle-left {
     transform: translateX(0);
 }
 
-.toggle-right{
+.toggle-right {
     right: 0;
     transform: translateX(0);
 }
 
-.container.active .toggle-right{
+.container.active .toggle-right {
     transform: translateX(200%);
 }
