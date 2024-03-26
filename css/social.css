@@ -1,8 +1,14 @@
 :root {
     --background: #060D23;
-    --youtube: #e52d27;
-    --x: #0F1419;
+    --google: red;
+    --apple: #0F1419;
     --white: #FFF;
+    --face: #3b5998;
+}
+
+i{
+    color: white;
+    font-size: 24px;
 }
 
 
@@ -33,34 +39,30 @@
     transition: all 0.1s;
 }
 
-.social-media-button img {
+.social-media-button {
     transition: all 0.3s;
 }
 
-.social-media-button:hover img {
+.social-media-button:hover {
     transform: scale(1.15);
 }
 
 .social-media-button:hover:nth-child(1) {
-    background:  radial-gradient(
-        circle at 30% 107%, #fdf497 0%, 
-        #fdf497 5%, #fd5949 45%,
-        #d6249f 60%,#285AEB 90%
-    ); 
+    background-color: var(--google);
 }
 
 .social-media-button:hover:nth-child(2) {
-    background-color: var(--white);
+    background-color: var(--face);
 }
 
-.social-media-button:hover:nth-child(2) svg {
+.social-media-button:hover:nth-child(2) {
     stroke: var(--x);
 }
 
 .social-media-button:hover:nth-child(3) {
-    background-color: var(--youtube);
+    background-color: var(--white);
 }
 
-.social-media-button:hover:nth-child(4) {
-    background-color: var(--linkedin);
+.social-media-button:hover:nth-child(3) .fa-brands {
+    color: black;
 }

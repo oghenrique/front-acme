@@ -225,3 +225,7 @@ h1{
 .container.active .toggle-right {
     transform: translateX(200%);
 }
+
+.button{
+    text-decoration: none;
+}
