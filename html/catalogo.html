@@ -8,8 +8,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="../css/catalogo.css">
+  <script type="module" src="../js/main.js" defer></script> 
   <script src="../js/catalogo.js" defer></script>
-  <script src="../js/main.js" defer></script>
   <title>Catálogo</title>
 </head>
 
@@ -38,9 +38,9 @@
     </nav>
   </header>
   <main>
-    <div class="card-container">
-      <div class="card">
-        <div class="card-inner">
+    <div id="card-container" class="card-container">
+      <div id="card" class="card">
+        <div id="card-inner" class="card-inner">
           <div class="card-front">
             <img src="../img/avengers-infinity-war-poster.jpeg" class="card-img-top" alt="Poster do filme"
               style="width: 100%; height: 100%; border-radius: 16px;">
@@ -54,7 +54,21 @@
           </div>
         </div>
       </div>
-    </div>
+      <div id="card" class="card">
+        <div id="card-inner" class="card-inner">
+          <div class="card-front">
+            <img src="../img/avengers-infinity-war-poster.jpeg" class="card-img-top" alt="Poster do filme"
+              style="width: 100%; height: 100%; border-radius: 16px;">
+          </div>
+          <div class="card-back">
+            <h5 class="titulo-card"> Vingadores </h5>
+            <button class="mais" data-bs-toggle="modal" data-bs-target="#modalExemplo">
+              <p>+</p>
+            </button>
+            <h5 class="valor-card">R$29.29</h5>
+          </div>
+        </div>
+      </div>
   </main>
 
   <div class="modal fade" id="modalExemplo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
