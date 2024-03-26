@@ -1,4 +1,4 @@
-import { getFilmes, postFilme } from "./filmes.js"
+import { getFilmes } from "./filmes.js"
 
 async function criarCard(filme) {
     const container = document.createElement('div')
@@ -39,6 +39,18 @@ async function criarCard(filme) {
     cardBack.append(titulo, botaoMais, valor)
     cardInner.append(cardFront, cardBack)
     container.appendChild(cardInner)
+
+    botaoMais.addEventListener('click', () => {
+        const modalTitulo = document.querySelector('.card-title')
+        const modalSinopse = document.querySelector('.sinopse-text')
+        const modalDataLancamento = document.querySelector('.lancamento-text')
+        const modalDuracao = document.querySelector('.duracao-text')
+
+        modalTitulo.textContent = filme.nome
+        modalSinopse.textContent = filme.sinopse
+        modalDataLancamento.textContent = filme.data_lancamento
+        modalDuracao.textContent = filme.duracao
+    })
 
     return container
 }
