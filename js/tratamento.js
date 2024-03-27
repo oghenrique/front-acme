@@ -34,10 +34,15 @@ function tratarDuracao(tempo) {
     // Separar as horas e os minutos
     const [horas, minutos] = tempoSemData.split(':')
 
-    // Formatar a duração
-    const duracaoFormatada = `${horas} horas e ${minutos} minutos`
-
-    return duracaoFormatada
+    // Verificar se o número de horas é maior que 1
+    if (parseInt(horas) > 1) {
+        const duracaoFormatada = `${horas} horas e ${minutos} minutos`
+        return duracaoFormatada
+    } else {
+        const duracaoFormatada = `${horas} hora e ${minutos} minutos`
+        return duracaoFormatada
+    }
 }
 
 export { tratarData, tratarDuracao }
+

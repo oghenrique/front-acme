@@ -31,7 +31,7 @@ async function criarCard(filme) {
     botaoMais.classList.add('mais')
     botaoMais.innerHTML = '<p>+</p>'
     botaoMais.addEventListener('click', (event) => {
-        event.stopPropagation() // Impede a propagação do evento de clique para o container do card
+        event.stopPropagation() 
         const modal = criarModal(filme)
         document.body.appendChild(modal)
         var myModal = new bootstrap.Modal(modal)
@@ -104,7 +104,7 @@ function criarModal(filme) {
         </div>
     `
 
-    return modal;
+    return modal
 }
 
 
