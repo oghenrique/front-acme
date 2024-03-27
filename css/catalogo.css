@@ -223,4 +223,10 @@ option {
 .hidden {
     display: none;
   }
+
+footer{
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
   
