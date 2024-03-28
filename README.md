@@ -3,27 +3,28 @@
 <br>
 
 <div align="center"> <img src="https://raw.githubusercontent.com/oghenrique/front-acme/main/img/login.jpg"
- alt="site preview" width="800"/> </div>
+ alt="visualização do site" width="800"/> </div>
 
  <div align="center"> <img src="https://raw.githubusercontent.com/oghenrique/front-acme/main/img/catalogo.jpg"
- alt="site preview" width="800"/> </div>
+ alt="visualização do site" width="800"/> </div>
 
 ---
+
 <br>
 
 ## Sobre o Projeto:
-- Projeto desenvolvido na disiciplina de Programação Web Back-End 2 (PWBE-2), no curso de Desenvolvimento de Sistemas no Senai Jandira, orientado pelo professor Fernando Leonid
-- Cada card contém a capa dos filmes adicionados na API
-- Quando o card é clicado, ele vira. Assim é possível saber mais infomrações dos filmes
+- Projeto desenvolvido na disciplina de Programação Web Back-End 2 (PWBE-2), no curso de Desenvolvimento de Sistemas no Senai Jandira, orientado pelo professor Fernando Leonid.
+- Cada card contém a capa dos filmes adicionados na API.
+- Ao clicar em um card, ele se expande, possibilitando visualizar mais informações sobre os filmes.
 
 <br>
 
 <div align="center"> <img src="https://raw.githubusercontent.com/oghenrique/front-acme/main/img/modal.jpg"
- alt="site preview" width="800"/> </div>
+ alt="visualização do site" width="800"/> </div>
 
 ---
-<br>
 
+<br>
 
 ## Etapas do Projeto:
 
@@ -41,6 +42,6 @@
 
 <br>
 
-## Utilização dos métodos POST, PUT E DELETE
+## Utilização dos métodos POST, PUT e DELETE
 
 - [CMS](https://github.com/oghenrique/CMS-Acme)
