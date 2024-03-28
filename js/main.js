@@ -79,7 +79,7 @@ function criarModal(filme) {
                     <div class="botao-sair">
                         <div class="exit">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
+                        </div>a
                     </div>
                     <div class="card-modal mb-4" style="max-width: 90%;">
                         <div class="row g-4">

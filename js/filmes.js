@@ -33,7 +33,7 @@ export async function postFilme (filme) {
 }
 
 export async function putFilme (filme) {
-    const url = `http://localhost:8080/v2/acmefilmes/filme${filme.id}`
+    const url = `http://localhost:8080/v2/acmefilmes/filme/${filme.id}`
     const options = {
         method: 'PUT',
         headers: {
@@ -49,7 +49,7 @@ export async function putFilme (filme) {
 }
 
 export async function deleteFilme (id) {
-    const url = `http://localhost:8080/v2/acmefilmes/filme${id}`
+    const url = `http://localhost:8080/v2/acmefilmes/filme/${id}`
     const options = {
         method: 'DELETE'
     }
