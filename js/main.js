@@ -13,7 +13,7 @@ async function criarCard(filme) {
 
     const imagem = document.createElement('img')
     imagem.src = filme.foto_capa
-    imagem.alt = `Poster do filme ${filme.nome}`
+    imagem.alt = `Poster do filme ${filme.titulo}`
     imagem.style.width = "100%"
     imagem.style.height = "100%"
     imagem.style.borderRadius = "16px"
@@ -25,7 +25,7 @@ async function criarCard(filme) {
 
     const titulo = document.createElement('h5')
     titulo.classList.add('titulo-card')
-    titulo.textContent = filme.nome
+    titulo.textContent = filme.titulo
 
     const botaoMais = document.createElement('button')
     botaoMais.classList.add('mais')
@@ -88,7 +88,7 @@ function criarModal(filme) {
                             </div>
                             <div class="col-md-6">
                                 <div class="card-body text-white">
-                                    <h4 class="card-title text-center fw-bolder">${filme.nome}</h4>
+                                    <h4 class="card-title text-center fw-bolder">${filme.titulo}</h4>
                                     <h4 class="card-sinopse fw-bolder">Sinopse:</h4>
                                     <div class="sinopse-text" style="max-height: 200px; overflow-y: auto; padding-right: 20px;">${filme.sinopse}</div>
                                     <h4 class="card-lancamento fw-bolder" style="margin-top: 10px;">Data de lançamento:</h4>
