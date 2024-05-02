@@ -24,13 +24,12 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-3 buscar" type="search" placeholder="Pesquise o título do filme..."
                         aria-label="Search" onkeyup="searchMovies(this.value)">
-                    <input class="form-control me-3 valor" type="search" placeholder="Preço" aria-label="Preço">
-                    <select class="form-select me-3 ano" aria-label="Default select example">
-                        <option selected>Ano</option>
-                        <option value="1">2024</option>
-                        <option value="2">2023</option>
-                        <option value="3">2022</option>
-                    </select>
+                        <select class="form-select me-3 selecao" aria-label="Default select example">
+                            <option value="filmes" selected>Filmes</option>
+                            <option value="atores">Atores</option>
+                            <option value="diretores">Diretores</option>
+                        </select>
+                        
                     <button class="btn btn-outline-success" id="botao" type="submit">
                         <i class="fa-solid fa-magnifying-glass lupa"></i>
                     </button>
